@@ -1,0 +1,120 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Follow API",
+      "version": "1.0.0",
+      "description": "API for managing follows between users."
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000"
+      }
+    ],
+    "components": {
+      "securitySchemes": {
+        "bearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      }
+    },
+    "security": [
+      {
+        "bearerAuth": []
+      }
+    ],
+    "paths": {
+      "/api/follow/user": {
+        "post": {
+          "summary": "Follow a user",
+          "description": "Allows a user to follow another user.",
+          "parameters": [
+            {
+              "name": "userId",
+              "in": "body",
+              "description": "ID of the user to follow.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "followerId",
+              "in": "body",
+              "description": "ID of the user who is following.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "User followed successfully"
+            },
+            "400": {
+              "description": "Invalid request or already following this user"
+            },
+            "401": {
+              "description": "Unauthorized: Missing or invalid JWT token"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ]
+        }
+      },
+      "/api/follow/user/{userId}/{followerId}": {
+        "delete": {
+          "summary": "Unfollow a user",
+          "description": "Allows a user to unfollow another user.",
+          "parameters": [
+            {
+              "name": "userId",
+              "in": "path",
+              "description": "ID of the user to unfollow.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "followerId",
+              "in": "path",
+              "description": "ID of the user who is following.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "User unfollowed successfully"
+            },
+            "400": {
+              "description": "User not found or not following this user"
+            },
+            "401": {
+              "description": "Unauthorized: Missing or invalid JWT token"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "bearerAuth": []
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,61 @@
+{"level":"info","message":"[2024-03-15T11:03:54.129Z] POST /users/register"}
+{"level":"info","message":"[2024-03-15T11:03:59.388Z] POST /users/register"}
+{"level":"info","message":"[2024-03-15T11:04:48.570Z] POST /users/register"}
+{"code":11000,"index":0,"keyPattern":{"username":1},"keyValue":{"username":"ritik#201"},"level":"error","message":"Error creating user profile: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#201\" }","stack":"MongoServerError: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#201\" }\n    at InsertOneOperation.execute (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/execute_operation.js:106:16)"}
+{"level":"info","message":"[2024-03-15T11:08:02.901Z] POST /users/register"}
+{"code":11000,"index":0,"keyPattern":{"username":1},"keyValue":{"username":"ritik#201"},"level":"error","message":"Error creating user profile: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#201\" }","stack":"MongoServerError: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#201\" }\n    at InsertOneOperation.execute (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/execute_operation.js:106:16)"}
+{"level":"info","message":"[2024-03-15T11:09:34.754Z] POST /users/register"}
+{"level":"info","message":"[2024-03-15T11:09:37.643Z] POST /users/register"}
+{"code":11000,"index":0,"keyPattern":{"username":1},"keyValue":{"username":"ritik#2"},"level":"error","message":"Error creating user profile: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }","stack":"MongoServerError: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }\n    at InsertOneOperation.execute (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/execute_operation.js:106:16)"}
+{"level":"info","message":"[2024-03-15T11:09:38.025Z] POST /users/register"}
+{"code":11000,"index":0,"keyPattern":{"username":1},"keyValue":{"username":"ritik#2"},"level":"error","message":"Error creating user profile: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }","stack":"MongoServerError: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }\n    at InsertOneOperation.execute (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/execute_operation.js:106:16)"}
+{"level":"info","message":"[2024-03-15T11:09:38.374Z] POST /users/register"}
+{"code":11000,"index":0,"keyPattern":{"username":1},"keyValue":{"username":"ritik#2"},"level":"error","message":"Error creating user profile: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }","stack":"MongoServerError: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }\n    at InsertOneOperation.execute (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/execute_operation.js:106:16)"}
+{"level":"info","message":"[2024-03-15T11:09:41.096Z] POST /users/register"}
+{"code":11000,"index":0,"keyPattern":{"username":1},"keyValue":{"username":"ritik#2"},"level":"error","message":"Error creating user profile: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }","stack":"MongoServerError: E11000 duplicate key error collection: socialNetworking.users index: username_1 dup key: { username: \"ritik#2\" }\n    at InsertOneOperation.execute (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/insert.js:48:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async executeOperationAsync (/home/ritik360/vsCode/SocialNetworkingAPI/node_modules/mongodb/lib/operations/execute_operation.js:106:16)"}
+{"level":"info","message":"[2024-03-15T11:16:56.933Z] GET /users/profile/ritik%232"}
+{"level":"info","message":"[2024-03-15T11:21:03.228Z] POST /users/login"}
+{"level":"info","message":"[2024-03-15T11:21:48.699Z] GET /users/profile/ritik%232"}
+{"level":"info","message":"[2024-03-15T11:28:52.737Z] GET /users/profile/ritik"}
+{"level":"info","message":"[2024-03-15T11:29:37.938Z] GET /users/profile/ritik"}
+{"level":"error","message":"User not found"}
+{"level":"info","message":"[2024-03-15T11:31:05.643Z] GET /users/profile/?username=ritik%232"}
+{"level":"info","message":"[2024-03-15T11:31:51.225Z] POST /users/register"}
+{"level":"info","message":"[2024-03-15T11:32:39.388Z] POST /users/login"}
+{"level":"error","message":"Invalid credentials"}
+{"level":"info","message":"[2024-03-15T11:32:45.949Z] POST /users/login"}
+{"level":"info","message":"[2024-03-15T11:33:32.337Z] GET /users/profile/?username=ritik310"}
+{"level":"info","message":"[2024-03-15T11:34:57.089Z] GET /users/profile/?username=ritik310"}
+{"level":"info","message":"[2024-03-15T11:36:54.154Z] GET /users/profile/?username=ritik310"}
+{"level":"info","message":"[2024-03-15T11:38:33.283Z] GET /users/profile/?username=ritik310"}
+{"level":"info","message":"[2024-03-15T11:39:57.800Z] GET /users/profile/?username=ritik310"}
+{"level":"info","message":"[2024-03-15T11:44:04.527Z] GET /users/profile/ritik310"}
+{"level":"info","message":"[2024-03-16T05:14:50.456Z] GET /users/profile/ritik310"}
+{"level":"info","message":"[2024-03-16T05:16:49.657Z] GET /users/profile//view/ritik310"}
+{"level":"info","message":"[2024-03-16T05:18:58.454Z] POST /users/login"}
+{"level":"info","message":"[2024-03-16T05:19:17.781Z] GET /users/profile//view/ritik310"}
+{"level":"info","message":"[2024-03-16T05:22:09.484Z] GET /users/profile/view/ritik310"}
+{"level":"info","message":"[2024-03-16T05:24:28.921Z] DELETE /users/profile/delete/ritik@1"}
+{"level":"info","message":"[2024-03-16T05:25:17.252Z] DELETE /users/profile/delete/ritik@101"}
+{"level":"info","message":"[2024-03-16T06:37:58.273Z] POST /users/register"}
+{"level":"info","message":"[2024-03-16T06:41:17.470Z] POST /users/login"}
+{"level":"info","message":"[2024-03-16T06:41:34.648Z] GET /users/profile/view/ritik310"}
+{"level":"info","message":"[2024-03-16T06:44:39.498Z] PUT /users/profile/update/ritik310"}
+{"level":"info","message":"[2024-03-16T06:45:29.611Z] PUT /users/profile/update/ritik310"}
+{"level":"info","message":"[2024-03-16T07:04:43.293Z] POST /users/login"}
+{"level":"info","message":"[2024-03-16T08:07:44.498Z] POST /users/register"}
+{"level":"error","message":"Error creating user profile: generateRandomString is not defined","stack":"ReferenceError: generateRandomString is not defined\n    at /home/ritik360/vsCode/SocialNetworkingAPI/controller/userController.js:33:7"}
+{"level":"info","message":"[2024-03-16T08:08:09.198Z] POST /users/register"}
+{"level":"error","message":"Error creating user profile: generateRandomString is not defined","stack":"ReferenceError: generateRandomString is not defined\n    at /home/ritik360/vsCode/SocialNetworkingAPI/controller/userController.js:33:7"}
+{"level":"info","message":"[2024-03-16T08:08:18.912Z] POST /users/register"}
+{"level":"error","message":"Error creating user profile: generateRandomString is not defined","stack":"ReferenceError: generateRandomString is not defined\n    at /home/ritik360/vsCode/SocialNetworkingAPI/controller/userController.js:33:7"}
+{"level":"info","message":"[2024-03-16T08:10:06.114Z] POST /users/register"}
+{"level":"error","message":"Error creating user profile: generateRandomString is not defined","stack":"ReferenceError: generateRandomString is not defined\n    at /home/ritik360/vsCode/SocialNetworkingAPI/controller/userController.js:33:7"}
+{"level":"info","message":"[2024-03-16T08:11:13.550Z] POST /users/register"}
+{"level":"error","message":"Error creating user profile: generateRandomString is not defined","stack":"ReferenceError: generateRandomString is not defined\n    at /home/ritik360/vsCode/SocialNetworkingAPI/controller/userController.js:33:7"}
+{"level":"info","message":"[2024-03-16T08:11:31.495Z] POST /users/register"}
+{"level":"info","message":"[2024-03-16T08:11:57.259Z] POST /users/register"}
+{"level":"info","message":"[2024-03-16T08:14:25.274Z] POST /users/login"}
+{"level":"info","message":"[2024-03-16T10:25:58.433Z] POST /users/login"}
+{"level":"info","message":"[2024-03-16T11:39:36.548Z] POST /users/login"}
+{"level":"info","message":"[2024-03-16T14:04:55.591Z] POST /users/login"}

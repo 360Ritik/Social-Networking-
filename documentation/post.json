@@ -1,0 +1,100 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Post API",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/add/post": {
+        "post": {
+          "summary": "Add Post",
+          "responses": {
+            "201": {
+              "description": "Post added successfully"
+            },
+            "404": {
+              "description": "User not found"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "JWT": []
+            }
+          ]
+        }
+      },
+      "/view/post/{userId}": {
+        "get": {
+          "summary": "View User's Posts",
+          "responses": {
+            "200": {
+              "description": "User's posts retrieved successfully"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "JWT": []
+            }
+          ]
+        }
+      },
+      "/update/post/{userId}": {
+        "put": {
+          "summary": "Update Post",
+          "responses": {
+            "200": {
+              "description": "Post updated successfully"
+            },
+            "404": {
+              "description": "Post not found or unauthorized"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "JWT": []
+            }
+          ]
+        }
+      },
+      "/delete/post/{postId}": {
+        "delete": {
+          "summary": "Delete Post",
+          "responses": {
+            "200": {
+              "description": "Post deleted successfully"
+            },
+            "404": {
+              "description": "Post not found or unauthorized"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "JWT": []
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "securitySchemes": {
+        "JWT": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      }
+    }
+  }
+  
