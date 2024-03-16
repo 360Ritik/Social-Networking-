@@ -1,50 +1,63 @@
-Social Networking API
+## Social Networking API
 
-This API provides endpoints for a social networking application, allowing users to register, login, create posts, follow other users, and more.
+This project provides a robust API for a social networking application, empowering users to register, log in, manage their profiles, create and interact with posts, follow other users, and stay connected.
 
-Endpoints
-The API provides the following endpoints:
+Key Features
 
+# Comprehensive Endpoints:
+User Management:
 /users/register: Register a new user.
 /users/login: User login.
-/users/profile/{username}: Get user profile by username.
-/posts: Create a new post and retrieve user's posts.
-/posts/{postId}: Update or delete a post.
-/follow/feed: Get user's feed.
-/follow/users/follow/{userId}: Follow a user.
-/follow/users/unfollow/{userId}: Unfollow a user.
-/follow/users/following: Get users followed by the current user.
-/follow/users/followers: Get users following the current user.
-/follow/hello: Test endpoint.
-Authentication
-Authentication is handled using JSON Web Tokens (JWT). To authenticate, include the JWT token in the Authorization header of your requests.
+/users/profile/{username}: Get user profile information by username.
 
-Database Configuration
-Install MongoDB on your local machine or use a cloud-based MongoDB service.
-Create a new database for the project.
-Copy the MongoDB connection URI provided by your database provider.
-Configure Environment Variables:
-Create a .env file in the root directory of the project.
-Add the MongoDB connection URI and other sensitive information to the .env file. For example:
-php
-Copy code
-MONGODB_URI=mongodb+srv://<Username>:<YourPassWord>@cluster0.e1pgcys.mongodb.net<DatabaseName>retryWrites=truew=majority&appName=Cluster0
+Post Management:
+/posts: Create a new post and retrieve the current user's posts.
+/posts/{postId}: Update or delete a specific post (requires authentication).
 
-Logging with Winston
-Centralized logging is implemented using Winston. Logs are stored in separate log files for different levels (info, warning, error). You can find log files in the logs directory. Additionally, logs are timestamped and formatted for easy readability.
-
-Swagger Documentation
-Swagger documentation is available at the /api-docs endpoint. You can use this interface to explore the API endpoints and their specifications.
-
-Configuration
-You can configure the API settings in the config.js file. Here, you can specify the port number, rate limiting settings, and other parameters.
-
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or create a pull request.
-
-This format is suitable for rendering on GitHub and provides clear formatting for each section of the README file.
+Following and Feed:
+/follow/feed: Get the current user's personalized feed based on followed users.
+/follow/users/follow/{userId}: Follow a specific user.
+/follow/users/unfollow/{userId}: Unfollow a specific user.
+/follow/users/following: Get a list of users the current user is following.
+/follow/users/followers: Get a list of users following the current user.
 
 
+# Secure Authentication:
+Utilizes JSON Web Tokens (JWT) for secure authentication. Include the JWT token in the Authorization header of your requests to access protected endpoints.
+
+# Database Integration:
+Supports MongoDB for user data and post storage.
+Instructions provided for setting up a local MongoDB instance or using a cloud-based service.
+
+# Centralized Logging:
+Leverages Winston for comprehensive logging.
+Logs are segregated by level (info, warning, error) for better organization.
+Timestamped and formatted log files located in the logs directory for easy analysis.
+
+# Swagger Documentation:
+Integrated Swagger documentation at the /api-docs endpoint, providing an interactive interface to explore available endpoints and their details.
+Customization:
+Configure API settings like port number and rate limiting in the config.js file.
+Open Source and Contributions:
+We welcome your contributions! Feel free to report issues or suggest improvements by creating an issue or pull request.
+Getting Started
+
+Prerequisites:
+Node.js and npm (or yarn)
+MongoDB (local or cloud-based)
+Clone the Repository:
+Bash
+git clone https://github.com/your-username/social-networking-api.git
 
 
+# Database Configuration:
+Create a .env file in the root directory and add your MongoDB connection URI.
+Refer to your MongoDB provider's instructions for obtaining the connection URI.
+Start the API:
+Bash
+npm start (or yarn start)
+Use code with caution.
+Usage
 
+API documentation is available at http://localhost:<port>/api-docs (replace <port> with the configured port number).
+Refer to the documentation for specific endpoint usage, request and response formats, authentication requirements, and error codes.
