@@ -22,14 +22,14 @@ app.use('/follow-docs', swaggerUi.serve, swaggerUi.setup(followSwaggerDocument))
 
 
 
-// // Apply rate limiting middleware to all routes in index.js
-// const limiter = rateLimit({
-//   windowMs: 15 * 60 * 1000, // 15 minutes
-//   max: 5, // Limit each IP to 5 requests per windowMs
-//   message: 'Too many requests from this IP, please try again later'
-// });
+// Apply rate limiting middleware to all routes in index.js
+const limiter = rateLimit({
+  windowMs: 5 * 60 * 1000, // 15 minutes
+  max: 10, // Limit each IP to 5 requests per windowMs
+  message: 'Too many requests from this IP, please try again later'
+});
 
-// app.use(limiter);
+app.use(limiter);
 
 app.use(express.json());
 
@@ -39,12 +39,9 @@ app.use('/posts', postController);
 app.use('/follow', followController);
 
 app.get('/',(req,res)=>{
-  res.send("application started");
+  res.send("Application started.......");
 });
 
-app.get('/check',(req,res)=>{
-  res.send("application started");
-});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

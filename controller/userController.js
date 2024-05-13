@@ -19,11 +19,6 @@ const logRequest = (req, res, next) => {
 router.use(logRequest);
 
 
-// to test 
-router.get('/test',(req,res)=>{
-    res.send("testing user service");
-  });
-  
 // Create User Profile
 router.post('/register', validateInput, async (req, res) => {
   try {
