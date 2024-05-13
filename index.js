@@ -31,7 +31,7 @@ const limiter = rateLimit({
 
 app.use(limiter);
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 
 app.use('/users', userController);
