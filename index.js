@@ -22,14 +22,14 @@ app.use('/follow-docs', swaggerUi.serve, swaggerUi.setup(followSwaggerDocument))
 
 
 
-// Apply rate limiting middleware to all routes in index.js
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // Limit each IP to 5 requests per windowMs
-  message: 'Too many requests from this IP, please try again later'
-});
+// // Apply rate limiting middleware to all routes in index.js
+// const limiter = rateLimit({
+//   windowMs: 15 * 60 * 1000, // 15 minutes
+//   max: 5, // Limit each IP to 5 requests per windowMs
+//   message: 'Too many requests from this IP, please try again later'
+// });
 
-app.use(limiter);
+// app.use(limiter);
 
 app.use(express.json());
 
