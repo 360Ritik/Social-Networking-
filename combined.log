@@ -59,3 +59,4 @@
 {"level":"info","message":"[2024-03-16T10:25:58.433Z] POST /users/login"}
 {"level":"info","message":"[2024-03-16T11:39:36.548Z] POST /users/login"}
 {"level":"info","message":"[2024-03-16T14:04:55.591Z] POST /users/login"}
+{"level":"info","message":"[2024-05-13T06:46:10.035Z] GET /users/test"}

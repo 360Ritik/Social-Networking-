@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 // Establish MongoDB connection
-mongoose.connect(process.env.MONGODB_URL ,
+mongoose.connect(process.env.MONGODB_URI ,
 {
   maxConnecting: 10 ,
   maxPoolSize: 10
