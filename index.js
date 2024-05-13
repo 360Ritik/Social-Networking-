@@ -10,7 +10,7 @@ const postSwaggerDocument = require('./documentation/post.json');
 const followSwaggerDocument = require('./documentation/follow.json');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 9001;
 
 
 
