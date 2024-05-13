@@ -38,6 +38,10 @@ app.use('/users', userController);
 app.use('/posts', postController);
 app.use('/follow', followController);
 
+app.get('/',(req,res)=>{
+  res.send("application started");
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
